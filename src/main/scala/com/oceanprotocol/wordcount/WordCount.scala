@@ -9,7 +9,7 @@ import scala.collection.immutable.ListMap
 object WordCount {
 
   val usage = """
-    Usage: WordCount --input0 path/to/input_file0  --input1 path/to/input_file1 --output path/to/output_file --logs path/to/log_file
+    Usage: WordCount --input0 path/to/inputdir0/  --input1 path/to/inputdir1/ --output path/to/outputdir/ --logs path/to/logdir/
   """
 
   val outputFileName = "output.txt"

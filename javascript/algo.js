@@ -3,7 +3,7 @@ const path = require("path")
 
 
 var input_folder="/data/inputs";
-var output_folder="/data/output"
+var output_folder="/data/outputs"
 
 
 async function processfolder(Path) {

@@ -26,6 +26,7 @@ async function countrows(file){
         var split_lines = to_string.split("\n");
         var rows=split_lines.length-1;
         fs.appendFileSync(output_folder+'/output.log', 'File '+file+' contains '+rows+' lines'+"\r\n");
+        console.log('File '+file+' contains '+rows+' lines')
 }
 
 

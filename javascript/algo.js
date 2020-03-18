@@ -21,12 +21,13 @@ async function processfolder(Path) {
 
 
 async function countrows(file){
+        console.log("Start counting for "+file)
         var fileBuffer =  fs.readFileSync(file);
         var to_string = fileBuffer.toString();
         var split_lines = to_string.split("\n");
         var rows=split_lines.length-1;
-        fs.appendFileSync(output_folder+'/output.log', 'File '+file+' contains '+rows+' lines'+"\r\n");
-        console.log('File '+file+' contains '+rows+' lines')
+        fs.appendFileSync(output_folder+'/output.log', 'file+','+rows+"\r\n");
+        console.log('Finished. We have '+rows+' lines')
 }
 
 

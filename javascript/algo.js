@@ -26,7 +26,7 @@ async function countrows(file){
         var to_string = fileBuffer.toString();
         var split_lines = to_string.split("\n");
         var rows=split_lines.length-1;
-        fs.appendFileSync(output_folder+'/output.log', 'file+','+rows+"\r\n");
+        fs.appendFileSync(output_folder+'/output.log', file+','+rows+"\r\n");
         console.log('Finished. We have '+rows+' lines')
 }
 
